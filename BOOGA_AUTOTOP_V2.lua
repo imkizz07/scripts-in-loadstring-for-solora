@@ -20,7 +20,7 @@ Settings = {
     ChargeTime = 3;-- Charge Time In Seconds
     FormType = "h"; -- Form Key
     SpamBeans = true; -- true = will spam beans,false = won't spam beans
-    AutoResetLowKi = true; -- Will reset your character when you are at low ki (Do not use if you are the only player on the TOP)
+    AutoResetLowKi = false; -- Will reset your character when you are at low ki (Do not use if you are the only player on the TOP)
     AutoPunchLowKi = true; -- will auto attack when you are low of ki
     FasterGod = false; -- ENABLE ONLY IF YOU ARE NOT THE ONLY PLAYER ON THE TOP,when your ki is low will reset your character to transform into god
     AutoStats = false;
