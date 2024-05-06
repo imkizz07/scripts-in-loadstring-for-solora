@@ -17,7 +17,7 @@ Settings = {
     webhookmode = false; --[Activate the sending of stats information to your webhook]--
     CooldownSlots = 0.1; --[Cooldown between slot change messages - recommended 0.1 / low pc recommended 0.2]--
     webhooklink = "";  --[put your own weebhook to get your lvl up info in discord]--
-    CrashMode = true; --[The game will be closed to be able to use in combination with Warline Reloader]--
+    CrashMode = false; --[The game will be closed to be able to use in combination with Warline Reloader]--
 }
 
 
