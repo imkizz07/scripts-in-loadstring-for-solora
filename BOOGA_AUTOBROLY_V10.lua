@@ -17,7 +17,7 @@ Settings = {
     PadChangerLimit = 5; -- [[ if someone has been in your pad 5 times, you will stop changing pads ]]
     FpsBoost = false; -- [[ Low your graphics to get a fps boost ]]
     Anchored = false; -- [[ Will freeze you on queue and broly world,enable broly anchored reccommended if you enable this ]]
-    BrolyAnchored = false; -- [[ Will freeze broly ]]
+    BrolyAnchored = true; -- [[ Will freeze broly ]]
 }
 
 TimeSettings = {
