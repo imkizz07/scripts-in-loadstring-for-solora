@@ -16,7 +16,7 @@ Settings = {
     AutoWish = false;
     Wish = "Zenni"; -- Zenni = 100k Zenni,Prestige = Prestige,EXP = More exp,Level Cap = Unlock Level Cap,God = Unlock God Form,Death = Go To Heaven,Nothing = nothing
     RejoinTime = 1200;-- If TOP is not completed in this time you will be teleported to queue
-    TOP = "Normal"; -- Normal = Normal TOP,Hard = Hard TOP
+    TOP = "Hard"; -- Normal = Normal TOP,Hard = Hard TOP
     ChargeTime = 4;-- Charge Time In Seconds
     FormType = "h"; -- Form Key
     SpamBeans = true; -- true = will spam beans,false = won't spam beans
