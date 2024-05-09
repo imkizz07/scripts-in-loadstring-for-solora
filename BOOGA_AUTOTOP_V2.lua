@@ -13,7 +13,7 @@ Moves = { -- You can put all the moves that you want
 	"Strong Kick"
 }
 Settings = {
-    AutoWish = false;
+    AutoWish = true;
     Wish = "Zenni"; -- Zenni = 100k Zenni,Prestige = Prestige,EXP = More exp,Level Cap = Unlock Level Cap,God = Unlock God Form,Death = Go To Heaven,Nothing = nothing
     RejoinTime = 1200;-- If TOP is not completed in this time you will be teleported to queue
     TOP = "Normal"; -- Normal = Normal TOP,Hard = Hard TOP
