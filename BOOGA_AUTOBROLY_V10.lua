@@ -22,8 +22,8 @@ Settings = {
 
 TimeSettings = {
     EarthTimer = 35; -- [[ Time that will wait in earth pad when you enable EarthMode ]]
-    QueueTimer = 35; -- Will teleport to earth at X seconds, maybe you need to put it higher with PadChanger enabled
-    BrolyTimer = 600; -- Will teleport to queue at X seconds
+    QueueTimer = 30; -- Will teleport to earth at X seconds, maybe you need to put it higher with PadChanger enabled
+    BrolyTimer = 200; -- Will teleport to queue at X seconds
 }
 
 Moves = {
