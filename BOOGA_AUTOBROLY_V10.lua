@@ -15,7 +15,7 @@ Settings = {
     SoloBroly = false; -- [[ If someone joins with you in broly world you will be teleproted to queue ]]
     PadChanger = false; -- [[ Will change pad if someone is in your pad ]]
     PadChangerLimit = 5; -- [[ if someone has been in your pad 5 times, you will stop changing pads ]]
-    FpsBoost = false; -- [[ Low your graphics to get a fps boost ]]
+    FpsBoost = true; -- [[ Low your graphics to get a fps boost ]]
     Anchored = false; -- [[ Will freeze you on queue and broly world,enable broly anchored reccommended if you enable this ]]
     BrolyAnchored = false; -- [[ Will freeze broly ]]
 }
