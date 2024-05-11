@@ -13,10 +13,10 @@ Moves = { -- You can put all the moves that you want
 	"Strong Kick"
 }
 Settings = {
-    AutoWish = true;
+    AutoWish = false;
     Wish = "Nothing"; -- Zenni = 100k Zenni,Prestige = Prestige,EXP = More exp,Level Cap = Unlock Level Cap,God = Unlock God Form,Death = Go To Heaven,Nothing = nothing
     RejoinTime = 1200;-- If TOP is not completed in this time you will be teleported to queue
-    TOP = "Noraml"; -- Normal = Normal TOP,Hard = Hard TOP
+    TOP = "Hard"; -- Normal = Normal TOP,Hard = Hard TOP
     ChargeTime = 4;-- Charge Time In Seconds
     FormType = "h"; -- Form Key
     SpamBeans = true; -- true = will spam beans,false = won't spam beans
