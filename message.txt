@@ -1,0 +1,92 @@
+-- Auto PvP
+
+local lp = game.Players.LocalPlayer
+local lpch = lp.Character
+local lphrp = lpch:WaitForChild("HumanoidRootPart")
+local mouse = lp:GetMouse()
+local target
+local moveType
+
+-- Lock onto a target player
+local function lockTarget()
+    -- TO DO: implement target locking logic
+    -- For now, just return the nearest player
+    local nearestPlayer
+    local nearestDistance = math.huge
+    for _, player in pairs(game.Players:GetPlayers()) do
+        if player ~= lp and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+            local distance = (player.Character.HumanoidRootPart.Position - lphrp.Position).Magnitude
+            if distance < nearestDistance then
+                nearestPlayer = player
+                nearestDistance = distance
+            end
+        end
+    end
+    return nearestPlayer
+end
+
+mouse.KeyDown:Connect(function(key)
+    if key == "v" then
+        target = target and nil or lockTarget()
+    end
+end)
+-- Check for move types
+local function checkMoveType(target)
+    local character = workspace.Live[target.Name]
+    if character then
+        local ki = character:FindFirstChild("ki", true)
+        local melee = character:FindFirstChild("melee", true)
+        if ki then return {"ki", ki.Parent} end
+        if melee then return {"melee", melee.Parent} end
+    end
+end
+
+-- Calculate distance to target
+local function getTargetDistance(target)
+    local targetHRP = target.Character.HumanoidRootPart
+    return (targetHRP.Position - lphrp.Position).Magnitude
+end
+
+-- Perform counter moves for ki attacks
+local function counterKiMove(target, moveName)
+    if getTargetDistance(target) <= 10 then
+		-- block
+		local blast = target:WaitForChild("Blast", 5)
+		if blast then
+		-- block off
+        end
+    else
+        	-- counter with afterimage/final blow combo
+		end
+
+    end
+end
+
+-- Perform counter moves for melee attacks
+local function counterMeleeMove(target, moveName)
+    lp.Character:WaitForChild("MoveStart")
+    -- implement melee counter move logic here
+end
+
+-- Perform counter moves based on the move type
+local function counterMove(target, moveType)
+    if moveType[1] == "melee" then
+        counterMeleeMove(target, moveType[2])
+    elseif moveType[1] == "ki" then
+        counterKiMove(target, moveType[2])
+    end
+end
+
+-- Connection to RunService
+local connection = game.RunService.Stepped:Connect(function()
+    target = lockTarget()
+    if target then
+        moveType = checkMoveType(target)
+        if moveType then -- if movetype and movetype[1] and movetype[2]
+            print(checkMoveType[2])
+            counterMove(target, moveType)
+        end
+    else
+        connection:Disconnect()
+    end
+end)
